@@ -1,0 +1,731 @@
+@import "global";
+
+.homePageCover {
+    position: relative;
+    background-color: $bgColor;
+    background-size: cover;
+    background-position: center bottom;
+    color: #fff;
+    overflow: hidden;
+    .container {
+        position: relative;
+        padding: 120px 20px;
+
+        @media (min-width: 768px) {
+            padding: 80px 50px;
+        }
+
+        @media (min-width: 1200px) {
+            padding: 200px 20px;
+        }
+    }
+
+    .videoBg {
+        background: #000;
+        position: absolute;
+        top: -75px;
+        right: 0;
+    }
+
+    .logoWatermarkHomeCover {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        transform: translate(-50%, 0);
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+
+    h1 {
+        max-width: 690px;
+        margin-bottom: 30px;
+        font-weight: 400;
+        line-height: 1.4;
+        font-size: 30px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 50px;
+            font-size: 48px;
+        }
+    }
+
+    h2 {
+        max-width: 500px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+
+        @media (min-width: 768px) {
+            margin-bottom: 50px;
+            font-size: 18px;
+        }
+    }
+
+    .btn-transparent {
+        @media (min-width: 768px) {
+            background: $main;
+            color: #fff;
+        }
+    }
+
+    .dotsHomeCover {
+        max-width: 35%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(0, 50%);
+    }
+}
+
+.homeIntro {
+    padding: 30px 0;
+
+    .homeIntroImage {
+        max-width: 80%;
+        margin-bottom: 30px;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            width: 45%;
+            margin-right: auto;
+        }
+
+        @media (min-width: 1200px) {
+            width: 35%;
+        }
+    }
+
+    .homeIntroCopy {
+        padding: 0 20px;
+        max-width: 560px;
+        margin-right: auto;
+        font-size: 16px;
+        line-height: 1.8;
+
+        h3 {
+            margin-bottom: 20px;
+            color: #242525;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.3;
+            letter-spacing: 0.9px;
+
+            @media (min-width: 1024px) {
+                font-size: 24px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            width: 45%;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 18px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 55%;
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding: 80px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 120px 0;
+    }
+}
+
+.homeIntro2 {
+    margin-bottom: 50px;
+
+    .container {
+        position: relative;
+
+        .dotsHomeIntro2 {
+            position: absolute;
+            max-width: 200px;
+            top: 0;
+            left: 0;
+            transform: translate(-100%, -0%) rotate(-90deg);
+        }
+
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .homeIntro2Image {
+        margin: 30px;
+
+        @media (min-width: 768px) {
+            width: 45%;
+        }
+    }
+
+    .homeIntro2Copy {
+        font-size: 16px;
+        line-height: 1.8;
+
+        h3 {
+            margin-bottom: 20px;
+            color: #242525;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.3;
+            letter-spacing: 0.9px;
+
+            @media (min-width: 1024px) {
+                font-size: 24px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            width: 45%;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 18px;
+        }
+    }
+}
+
+.homeAbout {
+    position: relative;
+    padding: 50px 0;
+    background-color: #242525;
+    color: #f4f4f4;
+
+    .logoWatermarkHomeAbout {
+        position: absolute;
+        top: -20px;
+        right: -20px;
+    }
+
+    .container {
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .homeAboutImage {
+        position: relative;
+        display: none;
+
+        img {
+            display: block;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .homeAboutImageShadow {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transform: translate(-10%, 10%);
+            background-image: linear-gradient(45deg, #94ce8f 0%, #1ea296 100%);
+        }
+
+        @media (min-width: 768px) {
+            width: 45%;
+            display: block;
+        }
+    }
+
+    .homeAboutCopy {
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .awards {
+            .award {
+                max-width: 75%;
+                padding: 10px 20px;
+                margin: 25px auto;
+                border-radius: 6px;
+                border: 1px solid #fff;
+                font-weight: 500;
+
+                &:nth-child(4n + 1) {
+                    border-color: #00b1a5;
+                }
+
+                &:nth-child(4n + 2) {
+                    border-color: #73c6a0;
+                }
+
+                &:nth-child(4n + 3) {
+                    border-color: #ffc901;
+                }
+
+                &:nth-child(4n + 4) {
+                    border-color: #d0d57c;
+                }
+
+                @media (min-width: 768px) {
+                    margin: 15px auto;
+                    width: 48%;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            @media (min-width: 768px) {
+                display: flex;
+                align-items: stretch;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (min-width: 768px) {
+            width: 48%;
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding: 120px 0;
+    }
+}
+
+.homeTestimonials {
+    background-color: #242525;
+    color: #f4f4f4;
+    padding-bottom: 80px;
+
+    .homeTestimonialWrapper {
+        padding: 0 25px;
+
+        @media (min-width: 768px) {
+            padding: 0 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+        }
+    }
+
+    .flexslider {
+        .flex-direction-nav .flex-prev {
+            left: 0;
+            opacity: 1;
+        }
+
+        .flex-direction-nav .flex-next {
+            right: 0;
+            opacity: 1;
+            text-align: right;
+        }
+
+        .flex-direction-nav a::before {
+            content: url(../images/left-arrow.png);
+        }
+
+        .flex-direction-nav a.flex-next::before {
+            content: url(../images/right-arrow.png);
+        }
+    }
+
+    .homeTestimonialImage {
+        img {
+            display: block;
+        }
+
+        .homeTestimonialImageDots {
+            max-width: 150px;
+            margin-left: auto;
+
+            @media (min-width: 768px) {
+                margin: auto;
+                margin-bottom: 50px;
+            }
+        }
+
+        .homeTestimonialImageMain {
+            max-width: 200px;
+            margin: 20px auto;
+            border-left: 40px #01a39d solid;
+        }
+
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+    .homeTestimonialCopy {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+
+        .testimonialName {
+            font-weight: 300;
+            font-size: 16px;
+
+            span {
+                display: block;
+                margin-top: 30px;
+                margin-bottom: 5px;
+                color: #01a39d;
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            font-size: 18px;
+            width: calc(100% - 250px);
+        }
+    }
+}
+
+.homeFreeDataSheet {
+    padding: 80px 0;
+    background: url(../images/download-datasheet-bg.png) no-repeat;
+    background-position: right bottom;
+    background-size: 100%;
+
+    .container {
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .homeFreeDataSheetCopy {
+        margin-bottom: 90px;
+
+        h3 {
+            margin-bottom: 20px;
+            color: #242525;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.3;
+            letter-spacing: 0.9px;
+
+            @media (min-width: 1024px) {
+                font-size: 24px;
+            }
+        }
+
+        .homeFreeDataSheetCopyForm {
+            margin-top: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .homeFreeDataSheetCopyFormWrapper {
+                width: 90%;
+            }
+
+            i {
+                color: $main;
+                font-size: 30px;
+                margin-left: 10px;
+            }
+        }
+
+        fieldset {
+            position: relative;
+            border: 0;
+            padding: 0;
+            border: solid 1px $main;
+            border-radius: 6px;
+
+            .frm_fields_container {
+                display: flex;
+                justify-content: space-between;
+                align-items: stretch;
+            }
+
+            .form-field {
+                width: 60%;
+
+                input {
+                    border-radius: 6px;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0px 10px;
+                    border: 0;
+                }
+            }
+
+            .frm_submit {
+                width: 40%;
+
+                button {
+                    width: 100%;
+                    padding: 15px 10px;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        @media (min-width: 768px) {
+            width: 45%;
+        }
+    }
+
+    .homeFreeDataSheetImage {
+        @media (min-width: 768px) {
+            width: 45%;
+        }
+    }
+
+    @media (min-width: 768px) {
+        background-size: auto 80%;
+        background-position: right top;
+    }
+
+    @media (min-width: 1024px) {
+        background-size: auto 100%;
+    }
+}
+
+.homeFeaturedOn {
+    padding: 80px 0;
+    margin-bottom: 50px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    h3 {
+        margin-bottom: 30px;
+        width: 100%;
+        color: #242525;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: center;
+
+        @media (min-width: 768px) {
+            font-size: 36px;
+        }
+    }
+
+    .award {
+        width: calc(40% - 40px);
+        margin: 20px;
+
+        @media (min-width: 768px) {
+            width: 130px;
+        }
+    }
+}
+
+.homeLastNews {
+    position: relative;
+    padding: 50px 0;
+
+    .container {
+        position: relative;
+        z-index: 2;
+
+        @media (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    .homeLastNewsDots {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(-90deg) translate(20%, -50%);
+    }
+
+    h3 {
+        width: 100%;
+        margin-bottom: 70px;
+        width: 100%;
+        color: #242525;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: center;
+
+        @media (min-width: 768px) {
+            font-size: 36px;
+        }
+    }
+
+    .homePost {
+        background-color: #fdfdfd;
+        margin: 20px 10px;
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                i {
+                    margin-right: 30px !important;
+                }
+            }
+        }
+
+        .homePostImage {
+            background: lightgrey;
+            @include ratio(2, 1);
+        }
+
+        .homePostText {
+            padding: 25px;
+            color: #000000;
+
+            h4 {
+                font-weight: 600;
+                font-size: 16px;
+
+                @media (min-width: 1200px) {
+                    font-size: 18px;
+                }
+            }
+
+            p {
+                font-size: 12px;
+
+                @media (min-width: 1200px) {
+                    font-size: 14px;
+                }
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-weight: 600;
+                color: #434343;
+
+                i {
+                    transition: all 0.2s linear;
+                    margin: 0;
+                    color: #01a39d;
+                    font-size: 24px;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                padding: 35px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            width: calc(33% - 20px);
+        }
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 120px;
+        left: 0;
+        width: 40%;
+        height: 60%;
+        background-image: linear-gradient(50deg, #94ce8f 0%, #1ea296 100%);
+
+        @media (min-width: 768px) {
+            top: 20px;
+            width: 30%;
+        }
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        background-color: #242525;
+    }
+}
+
+.homeCta {
+    position: relative;
+    padding-top: 50px;
+    background-color: #242525;
+    text-align: center;
+    color: #fff;
+
+    h3 {
+        max-width: 400px;
+        margin: 30px auto;
+        font-size: 18px;
+        font-weight: 400;
+
+        @media (min-width: 768px) {
+            font-size: 24px;
+        }
+    }
+
+    .homeCtaDots {
+        max-width: 120px;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        right: 0;
+        transform: translate(20%, -50%);
+
+        @media (min-width: 768px) {
+            max-width: 100%;
+        }
+
+        @media (min-width: 1200px) {
+            transform: translate(-100%, 0%);
+        }
+    }
+
+    .homeCtaImage {
+        max-width: 300px;
+        margin-top: 40px;
+        display: block;
+        position: relative;
+        bottom: 0;
+        left: 0;
+
+        @media (min-width: 768px) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            max-width: calc((100% - 300px) / 2);
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding-bottom: 100px;
+    }
+}

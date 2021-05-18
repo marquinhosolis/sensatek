@@ -1,0 +1,409 @@
+.pageAboutUs {
+
+
+    .contactPageCover {
+        .pageTitle {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 51px;
+            text-transform: uppercase;
+            letter-spacing: 0.9px;
+        }
+
+        p {
+            max-width: 690px;
+            font-size: 18px;
+        }
+    }
+}
+
+.industriesWeServe {
+    padding: 50px 0;
+
+    h3 {
+        margin: 50px 0;
+        color: #242525;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34px;
+        letter-spacing: 1.8px;
+        text-align: center;
+
+        @media(min-width:768px) {
+            font-size: 36px;
+        }
+    }
+
+    .aboutUsIndustries {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .aboutUsIndutry {
+            @include ratio(145, 215);
+            width: calc(50% - 20px);
+            margin: 10px;
+
+            .content {
+                transition: all linear 0.2s;
+                padding: 20px;
+                background-image: linear-gradient(to top, rgba(46, 81, 77, 0) 0%, #242525 100%);
+                color: #f4f4f4;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 21.77px;
+            }
+
+            &:hover {
+                .content {
+                    background-image: linear-gradient(to top, rgba(46, 81, 77, 0) 50%, #242525 100%);
+                }
+            }
+
+            @media(min-width:768px) {
+                width: calc((100% / 6) - 20px);
+            }
+        }
+    }
+
+    @media(min-width:768px) {
+        padding: 100px 0;
+    }
+}
+
+
+.pageAboutUsMilestones {
+    position: relative;
+    padding: 70px 0;
+    background-color: #242525;
+    color: #fff;
+
+    .logoWatermarkAboutUsMilestones {
+        position: absolute;
+        top: -50px;
+        right: -30px;
+    }
+
+    .pageAboutUsMilestonesTitle {
+        position: relative;
+        margin-bottom: 80px;
+
+        h3 {
+            position: relative;
+            z-index: 2;
+            background-color: #242525;
+            padding-right: 30px;
+            display: inline-block;
+            color: #f4f4f4;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 34px;
+            letter-spacing: 1.2px;
+            margin-bottom: 30px;
+
+            @media(min-width:768px) {
+                margin-bottom: 0;
+                font-size: 36px;
+
+            }
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #194744;
+            opacity: 0.59;
+
+            @media(min-width:768px) {
+                position: absolute;
+                z-index: 1;
+                bottom: 0;
+                top: 0;
+                margin: auto;
+                right: 0;
+
+            }
+        }
+    }
+
+    .milestonesWrapper {
+
+        .milestone {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+
+            .milestoneDate {
+                width: calc(30% - 20px);
+                padding-right: 15px;
+                text-align: right;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-end;
+                font-size: 14px;
+
+                @media(min-width:1200px) {
+                    font-size: 18px;
+                }
+            }
+
+            .milestoneBullet {
+                position: relative;
+                width: 40px;
+                display: flex;
+                align-items: flex-start;
+                padding-bottom: 50px;
+
+                img {
+                    display: block;
+                    position: relative;
+                    z-index: 2;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    z-index: 1;
+                    right: 0;
+                    left: 0;
+                    margin: auto;
+                    width: 3px;
+                    height: 100%;
+                    background-color: #303535;
+
+                }
+            }
+
+            .milestoneDescription {
+                padding-left: 15px;
+                width: calc(70% - 20px);
+                font-size: 12px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+
+                @media(min-width:1200px) {
+                    font-size: 16px;
+                }
+            }
+
+            &:last-child {
+
+                .milestoneBullet {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .viewMoreMilestones {
+        display: none;
+        padding-top: 50px;
+        text-align: center;
+        background-image: linear-gradient(to top, #242525 0%, rgba(36, 37, 37, 0) 100%);
+
+        a {
+            text-decoration: none;
+
+        }
+    }
+
+    @media(min-width:768px) {
+        padding-top: 100px;
+    }
+}
+
+.aboutUsTeam {
+    position: relative;
+    padding: 80px 0;
+
+    .container {
+        position: relative;
+    }
+
+    .aboutUsTeamDots {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(0, -100%);
+
+        @media(min-width: 768px) {
+            display: block;
+        }
+    }
+
+    .aboutUsTeamTitle {
+        text-align: center;
+        max-width: 650px;
+        margin: auto;
+
+        h3 {
+            color: #242525;
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            line-height: 29px;
+            margin-bottom: 20px;
+
+            @media(min-width: 768px) {
+                font-size: 36px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+
+    .aboutUsTeamWrapper {
+        margin-bottom: 50px;
+
+        .aboutUsTeamMate {
+            .aboutUsTeamCard {
+                position: relative;
+                background-color: #242525;
+                margin: 20px;
+
+                .aboutUsTeamCardJobTitle {
+                    padding: 10px 20px;
+                    text-align: right;
+                    color: #f4f4f4;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 25px;
+                    letter-spacing: 0.9px;
+                }
+
+                .aboutUsTeamCardImage {
+                    width: 85%;
+                    @include ratio(230, 130);
+                }
+
+                .aboutUsTeamCardName {
+                    width: 60%;
+                    padding: 15px 25px;
+                    color: #f4f4f4;
+                    font-size: 23px;
+                    font-weight: 700;
+                    line-height: 27.27px;
+                    letter-spacing: 1.5px;
+                }
+
+                .aboutUsTeamCardButton {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    display: inline-block;
+                    padding: 23px 16px;
+                    background-image: linear-gradient(50deg, #239c8f 0%, #87e58f 100%);
+                    color: #f4f4f4;
+                    font-size: 27px;
+                    font-weight: 700;
+                    line-height: 0;
+                    letter-spacing: 1.8px;
+                    text-decoration: none;
+                }
+            }
+
+            @media(min-width:768px) {
+                width: 30%;
+            }
+        }
+
+        .teamMemberModal {
+            position: fixed;
+            z-index: 5;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+
+            .teamMemberModalBody {
+                position: relative;
+                max-width: 800px;
+                background-color: #242525;
+                padding: 50px;
+
+                .closeModal {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 10px 15px;
+                    background-image: linear-gradient(50deg, #239c8f 0%, #87e58f 100%);
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+                .teamMemberModalName {
+                    margin-bottom: 10px;
+                    color: #01a39d;
+                    font-size: 24px;
+                    font-weight: 700;
+                    letter-spacing: 1.2px;
+                    line-height: 29px;
+                }
+
+                .teamMemberModalTitle {
+                    font-size: 16px;
+                    font-weight: 400;
+                    letter-spacing: 0.8px;
+                    line-height: 29px;
+                }
+
+                .teamMemberModalCopy {
+                    margin-top: 30px;
+                    font-size: 14px;
+                    font-weight: 300;
+                    letter-spacing: 0.8px;
+                    line-height: 24px;
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        @media(min-width:768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+
+    .affiliationsLogos {
+        img {
+            width: auto;
+            height: 100px;
+            margin: 20px;
+        }
+
+        @media(min-width:768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+
+    .teamMateWatermark {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}

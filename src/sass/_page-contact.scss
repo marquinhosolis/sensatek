@@ -1,0 +1,156 @@
+.contactPageCover {
+    h1 {
+        font-size: 24px;
+
+        @media (min-width: 768px) {
+            font-size: 36px;
+        }
+    }
+
+    address {
+        font-style: normal;
+        font-size: 18px;
+
+        ul {
+            li {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 10px;
+
+                i {
+                    font-size: 18px;
+                    margin-top: 5px;
+                    margin-right: 10px;
+                    color: $main;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.contactPageContent {
+    padding: 50px 0;
+
+    .container {
+        position: relative;
+    }
+
+    h3 {
+        max-width: 600px;
+        margin: auto;
+        margin-bottom: 15px;
+        color: #242525;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .contactPageContentCopy {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        color: #242525;
+        font-size: 18px;
+
+        fieldset {
+            border: 0;
+            padding: 0;
+
+            .frm_form_field {
+                width: 100%;
+                margin: 10px;
+
+                @media (min-width: 768px) {
+                    width: 45%;
+                }
+            }
+
+            .frm_fields_container {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            input,
+            select,
+            textarea {
+                width: 100%;
+                background: #fff;
+                padding: 10px 15px;
+                border-radius: 6px;
+                border: 1px solid #242525;
+                font-family: stratos-lights, sans-serif;
+
+                &::placeholder {
+                    color: #000;
+                    opacity: 1;
+                }
+            }
+
+            .selectWrapper {
+                position: relative;
+
+                select {
+                    appearance: none;
+                }
+
+                &:after {
+                    position: absolute;
+                    top: 13px;
+                    right: 10px;
+                    content: "\f0d7";
+                    display: block;
+                    font: normal normal normal 14px/1 FontAwesome;
+                    font-size: 18px;
+                    color: $main;
+                    pointer-events: none;
+                    display: inline-block;
+                }
+            }
+
+            #frm_field_5_container {
+                width: 100%;
+                margin: 10px;
+            }
+
+            .frm_submit {
+                margin-top: 10px;
+                margin-left: auto;
+                margin-right: 10px;
+
+                button {
+                    width: 100%;
+                }
+
+                @media (min-width: 768px) {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .dotsContactPage {
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        transform: rotate(-90deg) translate(0, -80%);
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding: 100px 0;
+    }
+}

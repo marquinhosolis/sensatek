@@ -1,0 +1,126 @@
+.pageNewsTitle {
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #242525;
+    font-size: 24px;
+    font-weight: 100;
+    background: #f4f4f4;
+
+    @media(min-width:768px) {
+        //font-size: 36px;
+        background: #242525;
+        color: #f4f4f4;
+    }
+}
+
+.pageNewsDots {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    transform: rotate(-90deg);
+
+    @media(min-width:768px) {
+        display: block;
+    }
+}
+
+.pageNewsSearch {
+    background: #f4f4f4;
+    padding: 30px 0;
+
+    .container {
+        @media(min-width:768px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    form {
+        position: relative;
+
+        input,
+        select {
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 6px;
+            border: 1px solid #242525;
+            appearance: none;
+            background: #fff;
+
+            @media(min-width:768px) {
+                min-width: 300px;
+            }
+        }
+
+        button {
+            position: absolute;
+            top: 12px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 18px;
+            color: #01a39d;
+        }
+
+        @media(min-width:768px) {
+            padding: 0 10px;
+        }
+    }
+
+    .selectWrapper {
+        position: relative;
+        margin-top: 20px;
+
+        &:after {
+            content: "\f0d7";
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 18px;
+            color: #01a39d;
+            position: absolute;
+            pointer-events: none;
+            top: 15px;
+            right: 15px;
+        }
+
+        @media(min-width:768px) {
+            margin-top: 0;
+        }
+    }
+}
+
+.noPosts {
+    width: 100%;
+    padding: 50px;
+    background: #fff;
+    text-align: center;
+    font-size: 36px;
+    color: #242525;
+}
+
+.pageNews {
+    background: #f4f4f4;
+
+    .viewMorePosts {
+        padding: 30px 0;
+        color: #02c0ad;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .homeLastNews {
+        &:after {
+            display: none;
+        }
+    }
+}

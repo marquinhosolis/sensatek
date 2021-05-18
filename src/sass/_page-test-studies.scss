@@ -1,0 +1,56 @@
+.homeLastNews {
+    .homePostStudyTest {
+        width: 100% !important;
+
+        a {
+            &:hover {
+                i {
+                    margin-left: 20px;
+                }
+
+                p {
+                    color: $main;
+                }
+            }
+        }
+
+        .homePostImage {
+            .content {
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                text-align: center;
+                background: rgba(0, 0, 0, 0.8);
+                color: #fff;
+
+                h4 {
+                    color: #f4f4f4;
+                    font-size: 24px;
+                    font-weight: 600;
+
+                    @media(min-width: 768px) {
+                        font-size: 32px;
+                    }
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 18px;
+                    letter-spacing: 2.88px;
+                }
+
+                i {
+                    transition: all 0.2s linear;
+                    color: #01a39d;
+                }
+            }
+
+            @media(min-width: 768px) {
+                @include ratio(900, 200);
+            }
+
+        }
+    }
+}
